@@ -1,0 +1,40 @@
+﻿SOLID
+
+
+Introduction:
+
+What does SOLID stand for:
+Single responsibility principle
+Open-closed principle
+Liskov substitution principle
+Interface segregation principle
+Dependency inversion principle
+
+What do those principles mean:
+Single responsibility principle -
+  A class should have one set of responsibilities.
+  This helps reduce the likelihood that a class will need to change.  If a single class handles data retrieval, transformation, validation, and logging, any change in those requirements means changes to that class.  A change to a class with all of those reponsibilities means all the other responsibilities risk being broken instead of only the responsibility for which the change is intended.
+
+Open-closed principle -
+  A class should be closed to modification but open to extension.  That is to say, once a class is in use, it shouldn't need to be changed to account for new uses.
+  This helps reduce the likelihood that old behavior will be broken by new requirements.  Should 100 clients be put at risk because of the needs of 1 new client?  Should we say no to our new client?
+
+Liskov substitution principle -
+  If type A is a subtype of B, and B is capable of an action, then type A should be able to fill in for B in all circumstances.
+  This allows easier substitution as a system grows.  It goes beyond simply saying that type A has the same method signatures as type B, it also says that type A has the same behavior as type B as far as any consumers are aware.  This leads to better encapsulation and less having to figure out an entire system at once.
+
+Interface segregation principle -
+  When expanding publicly consumed interfaces, avoid disturbing consumers by creating a new interface instead of extending an old interface.
+  This allows consumers who do not need the new behavior to not be disturbed while satisfying the new demand.  Nobody likes to have their build suddenly break because a method got added to an interface, especially if they don't care about the addition.  Don't make them pay that cost.
+
+Dependency inversion principle
+  A high level class should not handle lower level concerns, instead those concerns should be abstracted and handled elsewhere.
+  This helps reduce class complexity and facilitates the other SOLID principles.
+
+
+Instructions:
+1.  SRP - Refactor storage.cs to better follow the single responsibility principle.  Pay attention to what you're refactoring out and why.
+2.  OCP - A request has been made for Storage to type-check the values stored in it.  Implement it according to the open-closed principle.
+3.  LSP - A request has been made for Storage to use a remote store which can sometimes throw timeout exceptions.  Do exceptions break the LSP?  What can be done to the design of Storage to recover from that?
+4.  ISP - If you haven't already, extract an interface for Storage.  How could we go about adding a clear method to the interface without disturbing those who don't need it?
+5.  DIP - A request has been made for Storage to emit get and set metrics to a remote queue for some of it's uses.  How would the design change?  What if there was a request to support 100+ different ways to logging that information?
