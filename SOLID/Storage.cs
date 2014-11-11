@@ -5,22 +5,6 @@ using System.Diagnostics;
 using System.Collections.ObjectModel;
 
 namespace SOLID {
-	// Single responsibility principle
-	// - Accessing a store and reporting metrics on accessing that store
-
-	// Open-closed principle
-	// - Pose the "It works fine over here, we want a remote/local store version over there."
-	// finer point - subclassing and parameterization
-
-	// Liskov substitution principle
-	// - Remote store can sometimes throw timeout exceptions, problem?
-
-	// Interface segregation principle
-	// - Add a method without requiring old implementations to account for it
-
-	// Dependency inversion principle
-	// - checking a configuration value and instantiating a different service
-	// finer point - relation to inversion of control containers
 
 	public class Storage
 	{
