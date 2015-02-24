@@ -1,9 +1,21 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
-VisualStudioVersion = 12.0.30723.0
+VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SOLID", "SOLID\SOLID.csproj", "{DA8049C6-1120-44A1-B29E-422DF0845E5C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HashTableRepository", "SOLID\HashTableRepository.csproj", "{DA8049C6-1120-44A1-B29E-422DF0845E5C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Filmography", "Filmography\Filmography.csproj", "{1E69A26D-C05D-4A4E-8882-F644B0204B1B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ActorFilmographyConsole", "ActorFilmographyConsole\ActorFilmographyConsole.csproj", "{D7B7326F-9DF8-43F7-91BB-06B284F6941E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Application", "Application", "{B2F5B104-4A64-4D6F-A354-14391F58F180}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Models", "Models", "{A172E20D-0F01-418E-B7EF-D0784F74D249}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Repositories", "Repositories", "{F9A096E8-648D-410F-A48E-25F4F8DDBC78}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DictionaryRepository", "DictionaryRepository\DictionaryRepository.csproj", "{38C3A980-8B83-43DD-BF0E-99E47D721AC0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,8 +27,26 @@ Global
 		{DA8049C6-1120-44A1-B29E-422DF0845E5C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DA8049C6-1120-44A1-B29E-422DF0845E5C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DA8049C6-1120-44A1-B29E-422DF0845E5C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1E69A26D-C05D-4A4E-8882-F644B0204B1B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1E69A26D-C05D-4A4E-8882-F644B0204B1B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1E69A26D-C05D-4A4E-8882-F644B0204B1B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1E69A26D-C05D-4A4E-8882-F644B0204B1B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D7B7326F-9DF8-43F7-91BB-06B284F6941E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D7B7326F-9DF8-43F7-91BB-06B284F6941E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D7B7326F-9DF8-43F7-91BB-06B284F6941E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D7B7326F-9DF8-43F7-91BB-06B284F6941E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{38C3A980-8B83-43DD-BF0E-99E47D721AC0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{38C3A980-8B83-43DD-BF0E-99E47D721AC0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{38C3A980-8B83-43DD-BF0E-99E47D721AC0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{38C3A980-8B83-43DD-BF0E-99E47D721AC0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{DA8049C6-1120-44A1-B29E-422DF0845E5C} = {F9A096E8-648D-410F-A48E-25F4F8DDBC78}
+		{1E69A26D-C05D-4A4E-8882-F644B0204B1B} = {A172E20D-0F01-418E-B7EF-D0784F74D249}
+		{D7B7326F-9DF8-43F7-91BB-06B284F6941E} = {B2F5B104-4A64-4D6F-A354-14391F58F180}
+		{38C3A980-8B83-43DD-BF0E-99E47D721AC0} = {F9A096E8-648D-410F-A48E-25F4F8DDBC78}
 	EndGlobalSection
 EndGlobal
